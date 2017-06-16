@@ -7,7 +7,7 @@ This bot has been build to be integrated in another bot [BrickBot](https://brick
 The Rootdialog is storing the user preference for the currency. It can call 2 specialized dialogs, one to choose the currency, one to convert a currency to another. One class CurrencyList to find a currency based on country, one for the exchange rate.
 The shema below explain the all up path for the full bot.
 
-![Architecturte](/docs/arch.png)
+![Architecture](/docs/archi.png)
 
 The main root dialog call the currency dialog to setup the currency, the current currency is passed to the dialog at initialization timeframe, and the selected currency is passed back to the main dialog when it's over with the currency dialog selection.
 Same princile with the conversion rate dialog, the currency is passed, the conversion dialog is asking the user form which currency to convert, ask the amount, do the conversion and passing the result as a text to the main dialog. It's just done as an example of passing by an information.
